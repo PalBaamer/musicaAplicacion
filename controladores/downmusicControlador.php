@@ -4,7 +4,7 @@ echo "Iniciando contrlador"."<br>";
 session_start();
 require_once("../modelos/cancionModelo.php");
 
-require_once("../modelos/FacturaModelo.php");
+require_once("../modelos/facturaModelo.php");
 
 $cancionId=null;
 if(isset($_POST['idCancion'])) $cancionId =$_POST['idCancion'];
