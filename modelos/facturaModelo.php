@@ -76,7 +76,7 @@ class Factura{
 	public function ultimIdAdd(){
 		$db=Conectar::conexion();
 		
-		$sql="select max(InvoiceId) as newId from invoice";
+		$sql="select max(InvoiceId) as newId from Invoice";
 		$cantidad = mysqli_query($db,$sql);
 		$resultado = mysqli_fetch_array($cantidad);
 		$result = $resultado['newId'];
