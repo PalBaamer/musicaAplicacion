@@ -79,8 +79,8 @@ class Factura{
 		$sql="select max(InvoiceId) as newId from invoice";
 		$cantidad = mysqli_query($db,$sql);
 		$resultado = mysqli_fetch_array($cantidad);
-		$return = $resultado['newId'];
-		return $return;
+		$result = $resultado['newId'];
+		return $result;
 		
 	}
 
