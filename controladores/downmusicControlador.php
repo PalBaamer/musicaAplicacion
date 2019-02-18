@@ -12,7 +12,7 @@ if(isset($_POST['idCancion'])) $cancionId =$_POST['idCancion'];
 $cancion=new Cancion();
 $datos=$cancion->encontrarTodas();
 
-require_once("../modelos/FacturaModelo.php");
+require_once("../modelos/facturaModelo.php");
 $option=null;
 if(isset($_GET['action'])) $option=$_GET['action'];
 
