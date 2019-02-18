@@ -4,7 +4,7 @@ echo "Iniciando contrlador"."<br>";
 session_start();
 require_once("../modelos/detalleFacturaModelo.php");
 
-require_once("../modelos/FacturaModelo.php");
+require_once("../modelos/facturaModelo.php");
 
 
 $idFactura=$_GET['invoiceId'];
