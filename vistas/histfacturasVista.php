@@ -36,7 +36,7 @@
 						$button2 ="'>Ver Detalle</input></a></td>";
 						// Solo muestra datos no accede a los mismos
 						foreach ($datos as $dato) {
-							echo "<tr><td>".$dato->InvoiceId."</td><td>".$dato->InvoiceDate."</td><td>".$dato->Total."</td>".$button1.$dato->InvoiceId.$button2."</tr>";
+							echo "<tr><td>".$dato->InvoiceId."</td><td>".date("Y-m-d",strtotime($dato->InvoiceDate))."</td><td>".$dato->Total."</td>".$button1.$dato->InvoiceId.$button2."</tr>";
 							
 						}
 					?>

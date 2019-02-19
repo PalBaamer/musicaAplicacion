@@ -93,10 +93,9 @@ class Factura{
 		$db=Conectar::conexion();
 		$params="";
 		if(!is_null($fechaDesde) && !is_null($fechaHasta)){
-			$params ="and InvoiceDate between '".$fechaDesde."' and '".$fechaHasta."'";
+			$params ="and InvoiceDate >= '".$fechaDesde." 00:00:00' and InvoiceDate <='".$fechaHasta." 23:59:59'";
 		}
 			$sql="select * from Invoice where CustomerId=".$customerId." ".$params;
-
 
 		$resultado = mysqli_query($db,$sql);
 
